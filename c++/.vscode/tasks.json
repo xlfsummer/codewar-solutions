@@ -4,7 +4,10 @@
         {
             "label": "build",
             "command": "g++",
-            "args": ["-std=c++17","${file}","-o","${workspaceRoot}\\a.out"],
+            "args": ["-std=c++17","${file}","-o","${workspaceRoot}/a.out"],
+            "windows": {
+                "args": ["-std=c++17","${file}","-o","${workspaceRoot}\\a.out"]
+            },
         }
     ]
 }
