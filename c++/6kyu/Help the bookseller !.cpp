@@ -9,6 +9,8 @@ public:
     {
         std::string result;
         if(lstOfArt.empty() || categories.empty()) return result;
+        
+        // 时间复杂度 m * n
         for (auto catgory : categories)
         {
             int quantity = 0;

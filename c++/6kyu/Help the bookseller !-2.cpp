@@ -11,6 +11,7 @@ public:
         std::string result;
         std::map<char, int> map;
 
+        // 时间复杂度 m + n
         for (auto art : lstOfArt)
             map[art[0]] += std::stoi(art.substr(art.find(" ")));
         
